@@ -1,0 +1,14 @@
+type Query {
+    usersByEmail(email: String!): [User]
+    usersByUsername(username: String!): [User]
+    usersByEmailAndUsername(email: String!, username: String!): [User]
+}
+
+
+type User {
+    id: ID
+    username: String
+    email: String
+    password: String
+    status: String
+}
